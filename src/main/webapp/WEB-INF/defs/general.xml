@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+  <definition name="common" template="/WEB-INF/layout/classic.jsp">
+    <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+  </definition>
+  
+  <definition name="index" extends="common">
+    <put-attribute name="title" value="spring web application" />
+    <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    <put-attribute name="current" value="index"  cascade="true"/>
+  </definition>
+  
+  <definition name="users" extends="common">
+    <put-attribute name="title" value="spring web application" />
+    <put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+    <put-attribute name="current" value="users"  cascade="true"/>
+  </definition>
+  
+  <definition name="userDetails" extends="common">
+    <put-attribute name="title" value="user Details" />
+    <put-attribute name="body" value="/WEB-INF/jsp/userDetails.jsp" />
+    <put-attribute name="current" value="users" cascade="true"/>
+  </definition>
+ 
+  <definition name="userRegister" extends="common">
+    <put-attribute name="title" value="user Registration" />
+    <put-attribute name="body" value="/WEB-INF/jsp/userRegister.jsp" />
+    <put-attribute name="current" value="register" cascade="true"/>
+  </definition>
+  
+    <definition name="login" extends="common">
+    <put-attribute name="title" value="Login" />
+    <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+    <put-attribute name="current" value="login" cascade="true"/>
+  </definition>
+   
+</tiles-definitions>
