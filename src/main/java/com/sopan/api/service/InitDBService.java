@@ -74,10 +74,7 @@ public class InitDBService {
 		item1.setLink("https://www.flipkart.com/");
 		item1.setPublishedDate(new Date());
 		itemRepository.save(item1);
-		
-		
-		
-	}
+}
 	
 	
 }
