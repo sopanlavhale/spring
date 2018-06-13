@@ -75,6 +75,8 @@ public class InitDBService {
 		item1.setPublishedDate(new Date());
 		itemRepository.save(item1);
 		
+		
+		
 	}
 	
 	
