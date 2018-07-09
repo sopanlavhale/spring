@@ -71,9 +71,11 @@ public class InitDBService {
 		Item item1 = new Item();
 		item1.setBlog(blog);
 		item1.setTitle("second");
-		item1.setLink("https://www.flipkart.com/");
+		item1.setLink("https://www.flipkartAmazon.com/");
 		item1.setPublishedDate(new Date());
 		itemRepository.save(item1);
+		
+		
 }
 	
 	
